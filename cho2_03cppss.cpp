@@ -11,16 +11,21 @@ short int number1=0300;
 int number2=0x33f;
 
 long int number3=-123456789;
-//�ŧi�`����ܼ�,�åH�Q�i�즸�Ƴ]�w���
+//宣告常整數變數,並以十進位次數設定其值
 unsigned long int number4=978654321;
-//�ŧi�L���`�㦸�ܼ�,�åH�Q�i��Ƴ]�w���
+//宣告無號常整次變數,並以十進位數設定其值
 
-//��X�U�ؾ�Ƹ�ƫ��A�ȻP�Ҧ��줸��
+//輸出各種整數資料型態值與所佔位元數
 
-cout<<"�u���="<<number1<<"�Ҧ��줸��" <<sizeof(number1)<<endl;
-cout<<"���="<<number2<<"�Ҧ��줸��" <<sizeof(number2)<<endl;
-cout<<"�����="<<number3<<"�Ҧ��줸��" <<sizeof(number3)<<endl;
-cout<<"�L�������="<<number4<<"�Ҧ��줸��" <<sizeof(number4)<<endl;
+cout<<"短整數="<<number1<<"所佔位元組" <<sizeof(number1)<<endl;
+cout<<"整數="<<number2<<"所佔位元組" <<sizeof(number2)<<endl;
+cout<<"長整數="<<number3<<"所佔位元組" <<sizeof(number3)<<endl;
+cout<<"無號長整數="<<number4<<"所佔位元組" <<sizeof(number4)<<endl;
 ;	
 return 0;
 }
+
+//短整數=192所佔位元組2
+//整數=831所佔位元組4
+//長整數=-123456789所佔位元組4
+//無號長整數=978654321所佔位元組4
